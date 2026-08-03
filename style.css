@@ -1,0 +1,768 @@
+/* ==========================================
+   ShopSphere E-Commerce Website
+   style.css - Part 1
+========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#1e40af;
+    --success:#16a34a;
+    --danger:#ef4444;
+
+    --bg:#f5f7fb;
+    --card:#ffffff;
+    --text:#222;
+    --light:#666;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --radius:15px;
+
+}
+
+body{
+
+    background:var(--bg);
+    color:var(--text);
+
+}
+
+/* Dark Theme */
+
+body.dark{
+
+    --bg:#0f172a;
+    --card:#1e293b;
+    --text:#fff;
+    --light:#cbd5e1;
+}
+
+/* Header */
+
+header{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:var(--card);
+
+    box-shadow:var(--shadow);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.logo i{
+
+    color:var(--primary);
+    font-size:28px;
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+}
+
+nav{
+
+    display:flex;
+    gap:30px;
+
+}
+
+nav a{
+
+    color:var(--text);
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+.header-icons{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.header-icons button{
+
+    border:none;
+
+    background:var(--card);
+
+    box-shadow:var(--shadow);
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.header-icons button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.header-icons button i{
+
+    font-size:18px;
+    color:var(--text);
+
+}
+
+.header-icons span{
+
+    position:absolute;
+
+    top:-6px;
+    right:-6px;
+
+    background:var(--danger);
+
+    color:#fff;
+
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:12px;
+
+}
+
+/* Search */
+
+.search-box{
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    width:240px;
+
+    padding:12px 45px 12px 18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:40px;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+.search-box i{
+
+    position:absolute;
+
+    right:18px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--light);
+
+}
+
+/* Hero */
+
+.hero{
+
+    height:90vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("images/banner\ .jpg.jpeg") center/cover;
+
+    color:#fff;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+.shop-btn{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.shop-btn:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-4px);
+
+}
+/* ==========================================
+   ShopSphere E-Commerce Website
+   style.css - Part 2
+========================================== */
+
+/* ================= SECTION ================= */
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:var(--text);
+}
+
+/* ================= CATEGORIES ================= */
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.category{
+    background:var(--card);
+    border-radius:15px;
+    padding:35px 20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.category:hover{
+    transform:translateY(-10px);
+}
+
+.category i{
+    font-size:45px;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.category h3{
+    color:var(--text);
+}
+
+/* ================= PRODUCTS ================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:var(--card);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.3s;
+    position:relative;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-image{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-title{
+    font-size:20px;
+    font-weight:600;
+    color:var(--text);
+    margin-bottom:10px;
+}
+
+.product-description{
+    color:var(--light);
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.product-price{
+    font-size:24px;
+    color:var(--primary);
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.product-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.add-cart,
+.wishlist-btn{
+    flex:1;
+    border:none;
+    cursor:pointer;
+    padding:12px;
+    border-radius:10px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.add-cart{
+    background:var(--primary);
+    color:#fff;
+}
+
+.add-cart:hover{
+    background:var(--secondary);
+}
+
+.wishlist-btn{
+    background:#ffebee;
+    color:#e91e63;
+}
+
+.wishlist-btn:hover{
+    background:#ffcdd2;
+}
+
+/* ================= BADGES ================= */
+
+.discount-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ef4444;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.rating{
+    margin:12px 0;
+    color:#f59e0b;
+    font-size:14px;
+}
+
+/* ================= BUTTON EFFECT ================= */
+
+button{
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.04);
+}
+
+button:active{
+    transform:scale(.96);
+}
+/* ==========================================
+   ShopSphere E-Commerce Website
+   style.css - Part 3
+========================================== */
+
+/* ================= CART SIDEBAR ================= */
+
+.cart-sidebar{
+    position:fixed;
+    top:0;
+    right:-420px;
+    width:400px;
+    max-width:100%;
+    height:100vh;
+    background:var(--card);
+    box-shadow:-10px 0 25px rgba(0,0,0,.15);
+    transition:.4s;
+    z-index:9999;
+    display:flex;
+    flex-direction:column;
+}
+
+.cart-sidebar.active{
+    right:0;
+}
+
+.cart-header,
+.wishlist-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    border-bottom:1px solid #ddd;
+}
+
+.cart-header button,
+.wishlist-header button{
+    border:none;
+    background:transparent;
+    font-size:24px;
+    cursor:pointer;
+    color:var(--text);
+}
+
+.cart-items,
+#wishlistItems{
+    flex:1;
+    overflow-y:auto;
+    padding:20px;
+}
+
+.cart-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.cart-item img{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.cart-item-details{
+    flex:1;
+}
+
+.cart-item-details h4{
+    color:var(--text);
+    margin-bottom:5px;
+}
+
+.cart-item-details p{
+    color:var(--primary);
+    font-weight:600;
+}
+
+.cart-item-details button{
+    margin-top:8px;
+    background:#ef4444;
+    color:#fff;
+    border:none;
+    padding:6px 10px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.cart-footer{
+    padding:20px;
+    border-top:1px solid #ddd;
+}
+
+.cart-footer h3{
+    margin-bottom:15px;
+}
+
+#checkoutBtn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:var(--primary);
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#checkoutBtn:hover{
+    background:var(--secondary);
+}
+
+/* ================= WISHLIST ================= */
+
+.wishlist-popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(.8);
+    opacity:0;
+    visibility:hidden;
+    width:500px;
+    max-width:95%;
+    background:var(--card);
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    transition:.3s;
+    z-index:9999;
+}
+
+.wishlist-popup.active{
+    opacity:1;
+    visibility:visible;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+/* ================= CONTACT ================= */
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact input,
+.contact textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:var(--card);
+    color:var(--text);
+    outline:none;
+}
+
+.contact button{
+    background:var(--primary);
+    color:#fff;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:var(--secondary);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    color:#fff;
+    padding:60px 8% 20px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-container h3{
+    margin-bottom:20px;
+}
+
+.footer-container p,
+.footer-container li{
+    color:#d1d5db;
+    line-height:1.8;
+    list-style:none;
+}
+
+.footer-container a{
+    color:#d1d5db;
+    text-decoration:none;
+}
+
+.footer-container a:hover{
+    color:#fff;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+}
+
+.social-icons a{
+    width:42px;
+    height:42px;
+    background:#1f2937;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+}
+
+.social-icons a:hover{
+    background:var(--primary);
+}
+
+footer hr{
+    margin:40px 0 20px;
+    border:none;
+    border-top:1px solid #374151;
+}
+
+footer .copyright{
+    text-align:center;
+    color:#9ca3af;
+}
+
+/* ================= TOAST ================= */
+
+#toast{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:var(--success);
+    color:#fff;
+    padding:15px 20px;
+    border-radius:10px;
+    opacity:0;
+    pointer-events:none;
+    transition:.3s;
+    z-index:99999;
+}
+
+#toast.show{
+    opacity:1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    nav{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .search-box input{
+        width:170px;
+    }
+
+    .cart-sidebar{
+        width:100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .header-icons{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+}
