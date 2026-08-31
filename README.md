@@ -2,7 +2,7 @@
 A modern and responsive E-Commerce Website built using HTML, CSS, and JavaScript. This project provides a simple online shopping interface with product listings, attractive UI, and an easy-to-use shopping experience.
 
 🚀 Live Demo
-Add your GitHub Pages link here
+https://jeyabharathy30092006-cpu.github.io/E-Commerce-Website/
 
 ✨ Features
 - 🛍️ Product listing
@@ -42,11 +42,12 @@ E-Commerce-Website
 
 ⚙️ How to Run
 1. Clone the Repository
-git clone YOUR_GITHUB_REPOSITORY_LINK
-2. Open the Project
+git clone:
+https://github.com/jeyabharathy30092006-cpu/E-Commerce-Website.git
+3. Open the Project
 Open the downloaded project folder in Visual Studio Code.
-3. Run the Website
-Open "index.html" in your web browser.
+4. Run the Website
+Open "index.html" in your web browser. 
 
 🎯 Project Objective
 The main objective of this project is to build a responsive e-commerce website and practice frontend development concepts such as:
@@ -70,5 +71,11 @@ The main objective of this project is to build a responsive e-commerce website a
 Jeya Bharathy
 Computer Science and Engineering Student
 
+🔗 Project Links
+Live Demo:
+https://jeyabharathy30092006-cpu.github.io/E-Commerce-Website/
+GitHub Repository:
+https://github.com/jeyabharathy30092006-cpu/E-Commerce-Website
+
 ⭐ Support
-If you like this project, consider giving the repository a ⭐ on GitHub.
+If you like this project, consider giving the repository on GitHub.
