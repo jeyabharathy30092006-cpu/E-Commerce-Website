@@ -25,17 +25,19 @@ E-Commerce-Website
  * style.css
  * script.js
  * images
-    * banner.jpg
-    * product1.jpg
-    * product2.jpg
-    * product3.jpg
-    * product4.jpg
-    * product5.jpg
-    * product6.jpg
-    * product7.jpg
-    * product8.jpg
-    * product9.jpg
-    * product10.jpg
+    * banner.jpg.jpeg
+    * product1.jpg.jpeg
+    * product2.jpg.jpeg
+    * product3.jpg.jpeg
+    * product4.jpg.jpeg
+    * product5.jpg.jpeg
+    * product6.jpg.jpeg
+    * product7.jpg.jpeg
+    * product8.jpg.jpeg
+    * product9.jpg.jpeg
+    * product10.jpg.jpeg
+    * product11.jpg.jpeg
+    * product12.jpg.jpeg
  * README.md
 
 ⚙️ How to Run
