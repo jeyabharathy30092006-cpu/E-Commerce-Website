@@ -3,6 +3,7 @@
 A modern and responsive E-Commerce Website built using HTML, CSS, and JavaScript. This project provides a simple online shopping interface with product listings, attractive UI, and an easy-to-use shopping experience.
 
 🚀 Live Demo
+
 https://jeyabharathy30092006-cpu.github.io/E-Commerce-Website/
 
 ✨ Features
@@ -51,6 +52,7 @@ Open the downloaded project folder in Visual Studio Code.
 Open "index.html" in your web browser. 
 
 🎯 Project Objective
+
 The main objective of this project is to build a responsive e-commerce website and practice frontend development concepts such as:
 - Web page structure
 - Responsive layouts
@@ -73,8 +75,10 @@ Jeya Bharathy
 Computer Science and Engineering Student
 
 🔗 Project Links
+
 Live Demo:
 https://jeyabharathy30092006-cpu.github.io/E-Commerce-Website/
+
 GitHub Repository:
 https://github.com/jeyabharathy30092006-cpu/E-Commerce-Website
 
