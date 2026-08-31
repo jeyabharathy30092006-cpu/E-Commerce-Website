@@ -22,6 +22,7 @@ https://jeyabharathy30092006-cpu.github.io/E-Commerce-Website/
 - JavaScript – Dynamic functionality and user interactions
 
 📂 Project Structure
+
 E-Commerce-Website
  * index.html
  * style.css
@@ -72,6 +73,7 @@ The main objective of this project is to build a responsive e-commerce website a
 
 👩‍💻 Author
 Jeya Bharathy
+
 Computer Science and Engineering Student
 
 🔗 Project Links
