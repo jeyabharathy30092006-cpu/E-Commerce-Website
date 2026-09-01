@@ -42,6 +42,16 @@ E-Commerce-Website
     * product11.jpg.jpeg
     * product12.jpg.jpeg
  * README.md
+ 
+## 📸 Screenshots
+### 🏠 Home Page
+![E-Commerce Home Page](./ecommerce-home.jpg)
+### 🛍️ Products Section
+![E-Commerce Products](./ecommerce-products.jpg)
+### 📦 Product Listing
+![E-Commerce Product Listing](./ecommerce-products-2.jpg)
+### 📞 Contact & Footer
+![E-Commerce Contact and Footer](./ecommerce-contact.jpg)
 
 ⚙️ How to Run
 1. Clone the Repository
