@@ -795,3 +795,25 @@ footer .copyright{
         padding: 15px;
     }
 }
+/* ================= MOBILE CART FINAL FIX ================= */
+
+@media screen and (max-width: 992px) {
+
+    .cart-sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        right: -100vw !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: 100vh !important;
+        height: 100dvh !important;
+        box-sizing: border-box !important;
+        z-index: 99999 !important;
+        overflow: hidden;
+    }
+
+    .cart-sidebar.active {
+        right: 0 !important;
+    }
+
+}
